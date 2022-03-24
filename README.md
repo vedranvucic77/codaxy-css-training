@@ -6,10 +6,9 @@ To start the application, run:
 npm start
 ```
 
-To build the application, run:
-
+or 
 ```bash
-npm run build
+yarn start
 ```
 
 ### License 
