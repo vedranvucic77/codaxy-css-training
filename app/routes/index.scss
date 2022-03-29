@@ -1,3 +1,20 @@
+@import "dashboard/index";
 
-@import 'dashboard/index';
+.main {
+    margin: 64px 79px 0 72px;
+    display: grid;
+    gap: 32px 96px;
+}
 
+.box {
+    background: #c4c4c4;
+    height: 200px;
+    width: 100%;
+}
+
+.text {
+    background-color: #eeeeee;
+    display: flex;
+    justify-content: space-between;
+    gap: 64px;
+}

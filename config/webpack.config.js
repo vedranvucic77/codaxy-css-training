@@ -1,16 +1,15 @@
-const
-    HtmlWebpackPlugin = require("html-webpack-plugin"),
+const HtmlWebpackPlugin = require("html-webpack-plugin"),
     path = require("path"),
     babelCfg = require("./babel.config"),
-    p = p => path.join(__dirname, "../", p || "");
+    p = (p) => path.join(__dirname, "../", p || "");
 
 module.exports = {
     resolve: {
         alias: {
-            app: p("app")
+            app: p("app"),
             //uncomment the line below to alias cx-react to cx-preact or some other React replacement library
             //'cx-react': 'cx-preact',
-        }
+        },
     },
 
     module: {
@@ -21,37 +20,37 @@ module.exports = {
                 include: /[\\\/](app|cx|cx-react|cx-theme-\w*)[\\\/]/,
                 use: {
                     loader: "babel-loader",
-                    options: babelCfg
-                }
+                    options: babelCfg,
+                },
             },
             {
-                test: /\.(png|jpg)/,
-                use: "file-loader"
-            }
-        ]
+                test: /\.(png|jpg|svg)/,
+                use: "file-loader",
+            },
+        ],
     },
     entry: {
         vendor: ["cx-react", p("app/polyfill.js")],
-        app: [p("app/index.js")]
+        app: [p("app/index.js")],
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template: p("app/index.html")
+            template: p("app/index.html"),
         }),
     ],
     optimization: {
-        runtimeChunk: 'single'
+        runtimeChunk: "single",
     },
     cache: {
-        type: 'filesystem',
+        type: "filesystem",
 
         buildDependencies: {
             config: [
                 __filename,
-                p('config/webpack.dev.js'),
-                p('config/webpack.prod.js'),
-                p('config/babel.config.js')
-            ]
-        }
-    }
+                p("config/webpack.dev.js"),
+                p("config/webpack.prod.js"),
+                p("config/babel.config.js"),
+            ],
+        },
+    },
 };

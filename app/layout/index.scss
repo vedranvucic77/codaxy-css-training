@@ -1,0 +1,14 @@
+$sidebar-width: 17.437rem;
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: $sidebar-width;
+    height: 1082px;
+    background: #c4c4c4;
+}
+
+.sidebarOpened {
+    margin-left: $sidebar-width;
+}
