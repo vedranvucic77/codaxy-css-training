@@ -1,6 +1,7 @@
 import { Chart, Gridlines, LineGraph, NumericAxis } from "cx/charts";
 import { Svg } from "cx/svg";
 import { Button } from "cx/widgets";
+import { Card } from "../../components/Card";
 import { Infobtn } from "../../components/Infobtn";
 import Controller from "./Controller";
 
@@ -91,8 +92,16 @@ export default (
                     class="text"
                     style="grid-row-start: 2; grid-column-start: 1; grid-column-end: 5"
                 >
-                    <div class="box"></div>
-                    <div class="box"></div>
+                    <Card
+                        title="Some random text instead of a really long title"
+                        desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et doloredoloredoloredoloredoloredolore"
+                        btn="Read More"
+                    />
+                    <Card
+                        title="Some random text instead of a really long title"
+                        desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et doloredoloredoloredoloredoloredolore"
+                        btn="Read More"
+                    />
                 </div>
                 <div
                     class="box"
