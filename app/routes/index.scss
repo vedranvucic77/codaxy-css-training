@@ -21,6 +21,24 @@ $primary-color: #397289;
     gap: 64px;
 }
 
+.title {
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 23.44px;
+}
+
+.desc {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22.5px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    height: 40px;
+}
+
 .boxshadow {
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
 }
