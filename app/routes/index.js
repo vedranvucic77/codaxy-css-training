@@ -1,7 +1,8 @@
 import { FirstVisibleChildLayout } from "cx/ui";
-import { Sandbox } from "cx/widgets";
-import AppLayout from "../layout";
+import { RedirectRoute, Route, Sandbox } from "cx/widgets";
 
+import AppLayout from "../layout";
+import Dashboard from "./dashboard";
 export default () => (
     <cx>
         <Sandbox
@@ -10,31 +11,11 @@ export default () => (
             outerLayout={AppLayout}
             layout={FirstVisibleChildLayout}
         >
-            <div class="main">
-                <div
-                    class="box"
-                    style="grid-column-start: 1; grid-column-end: 5"
-                ></div>
-                <div
-                    class="box"
-                    style="grid-column-start: 5; grid-column-end: 7"
-                ></div>
-                <div
-                    class="text"
-                    style="grid-row-start: 2; grid-column-start: 1; grid-column-end: 5"
-                >
-                    <div class="box"></div>
-                    <div class="box"></div>
-                </div>
-                <div
-                    class="box"
-                    style="grid-row-start: 2; grid-column-start: 5; grid-column-end: 7"
-                ></div>
-                <div
-                    class="box"
-                    style="grid-row-start: 3; grid-column-start: 1; grid-column-end: 7"
-                ></div>
-            </div>
+            <RedirectRoute route="~/" redirect="~/dashboard" url-bind="url" />
+
+            <Route url-bind="url" path="~/dashboard">
+                <Dashboard />
+            </Route>
         </Sandbox>
     </cx>
 );

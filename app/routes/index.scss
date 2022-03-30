@@ -1,5 +1,7 @@
 @import "dashboard/index";
 
+$primary-color: #397289;
+
 .main {
     margin: 64px 79px 0 72px;
     display: grid;
@@ -17,4 +19,24 @@
     display: flex;
     justify-content: space-between;
     gap: 64px;
+}
+
+.boxshadow {
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.border {
+    border-radius: 4px;
+}
+
+.cxm-primary {
+    height: 32px;
+    background: $primary-color !important;
+    border-color: $primary-color !important;
+    border-radius: 5px;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    padding-left: 25px;
+    padding-right: 25px;
 }

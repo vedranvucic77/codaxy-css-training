@@ -1,52 +1,43 @@
-.kpi-header {
-    margin: 0 0 10px 0;
-    text-align: center;
-    text-transform: uppercase;
-}
+.phototext {
+    display: flex;
+    flex-direction: row;
+    max-width: 868px;
+    max-height: 240px;
 
-.kpi-footer {
-    margin-top: 10px;
-    text-align: center;
-    text-transform: uppercase;
-    color: gray;
-}
+    .photo {
+        width: 297px;
+        height: 240px;
+        background: url("../assets/img/photo.png");
+        display: flex;
+        align-items: center;
+        margin-right: 32px;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
 
-.kpi-main {
-    height: 115px;
-}
+    p {
+        padding-top: 24px;
+        font-family: "Roboto", sans-serif;
+        font-size: 12px;
+        font-weight: 400;
+    }
 
-.kpi-value {
-    font-size: 50px;
-    text-align: right;
-    padding-top: 20px;
-}
+    h2 {
+        margin-top: -14px;
+        max-width: 370px;
+        font-family: "Roboto", sans-serif;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 23.44px;
+    }
 
-.kpi-value-text {
-    font-size: 15px;
-    text-align: right;
-    text-transform: uppercase;
-    font-weight: bold;
-    margin-top: -10px;
-}
-
-.donut-text {
-    font-size: 20px;
-}
-
-.line-marker circle {
-    stroke: white;
-    stroke-width: 4px;
-    transition: stroke 0.3s ease-in-out;
-}
-
-.line-marker circle:hover {
-    stroke: #99e4ee;
-}
-
-.cxe-numericaxis-label {
-    font-size: 10px;
-}
-
-.cxe-categoryaxis-label {
-    font-size: 10px;
+    h4 {
+        padding-top: 10px;
+        padding-bottom: 14px;
+        max-width: 328px;
+        font-family: "Roboto", sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 22.5px;
+    }
 }
