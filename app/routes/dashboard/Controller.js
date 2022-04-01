@@ -1,5 +1,7 @@
 import { Controller, KeySelection } from "cx/ui";
 
+import { customers } from "./Customers";
+
 export const columnSelection = new KeySelection({
     keyField: "x",
     bind: "$page.selection",
@@ -36,5 +38,7 @@ export default class extends Controller {
                 v4: v1 + 10 + Math.random() * 10,
             }))
         );
+
+        this.store.set("$page.customers", customers);
     }
 }

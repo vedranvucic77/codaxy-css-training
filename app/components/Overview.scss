@@ -1,0 +1,20 @@
+.overview {
+    width: 100%;
+    grid-row-start: 3;
+    grid-column-start: 1;
+    grid-column-end: 10;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+
+    .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 3 * $main-unit-size $main-unit-size $main-unit-size
+            $main-unit-size;
+
+        h4 {
+            font-size: 5 * ($main-unit-size / 2);
+            font-weight: 600;
+        }
+    }
+}

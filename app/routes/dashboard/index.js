@@ -12,6 +12,7 @@ import { Button, Repeater } from "cx/widgets";
 
 import { Card } from "../../components/Card";
 import { Main } from "../../components/Main";
+import { Overview } from "../../components/Overview";
 import { columnSelection } from "./Controller";
 import Controller from "./Controller";
 
@@ -190,7 +191,8 @@ export default (
                     </Chart>
                 </Svg>
             </div>
-            <div style="width: 100%; height: 50px; background: yellow; grid-row-start: 3; grid-column-start: 1; grid-column-end: 10;"></div>
+
+            <Overview />
         </div>
     </cx>
 );
