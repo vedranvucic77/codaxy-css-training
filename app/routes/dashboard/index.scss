@@ -2,6 +2,7 @@
     margin-top: 8 * $main-unit-size;
     display: grid;
     gap: 5 * $main-unit-size 4 * $main-unit-size;
+    z-index: 1;
 }
 
 .chart {
@@ -44,4 +45,75 @@
     padding-bottom: 2 * $main-unit-size;
     grid-column-start: 4;
     grid-column-end: 10;
+}
+
+.svgchart {
+    width: 95%;
+    height: 200px;
+}
+
+@media screen and (max-width: $small-device) {
+    .dashboard {
+        margin-top: 10 * $main-unit-size;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .chart {
+        max-width: 84%;
+        position: relative;
+        grid-row-start: 2;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        margin-left: 0;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column-reverse;
+
+        .description {
+            max-width: none;
+            padding-bottom: 80px;
+        }
+
+        button {
+            position: absolute;
+            right: 30px;
+            bottom: 10px;
+        }
+    }
+
+    .card_carrier {
+        width: 100%;
+        grid-row-start: 3;
+        flex-direction: column;
+        align-items: center;
+
+        .card:nth-child(2) {
+            margin-top: 4 * $main-unit-size;
+        }
+    }
+
+    .box_chart {
+        grid-row-start: 4;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .dashboard {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .chart {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .card_carrier {
+        width: 100%;
+    }
 }

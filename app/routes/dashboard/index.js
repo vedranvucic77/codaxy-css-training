@@ -40,7 +40,7 @@ export default (
                         See Analysis
                     </Button>
                 </div>
-                <Svg style="width:270px; height:200px; margin-right: 32px;">
+                <Svg class="svgchart">
                     <Chart
                         offset="20 -10 -40 40"
                         axes={{
@@ -132,7 +132,7 @@ export default (
                         See Analysis
                     </Button>
                 </div>
-                <Svg style="width:270px; height:200px; margin-right: 32px;">
+                <Svg class="svgchart">
                     <Chart
                         offset="20 -20 -30 40"
                         axes={{

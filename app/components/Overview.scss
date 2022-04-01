@@ -17,4 +17,22 @@
             font-weight: 600;
         }
     }
+
+    .overview_grid {
+        width: 100%;
+        padding: 10px 10px 16px 16px;
+    }
+}
+
+@media screen and (max-width: $small-device) {
+    .overview {
+        width: 84%;
+        grid-column-start: 1;
+        grid-column-end: 10;
+        grid-row-start: 5;
+
+        .overview_grid {
+            padding: 0 !important;
+        }
+    }
 }

@@ -1,6 +1,6 @@
 .card {
     position: relative;
-    max-width: 419px;
+    width: 48%;
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
 
     .title {
@@ -39,5 +39,11 @@
         position: absolute;
         bottom: 3 * $main-unit-size;
         right: 3 * $main-unit-size;
+    }
+}
+
+@media screen and (max-width: 820px) {
+    .card {
+        width: 87%;
     }
 }

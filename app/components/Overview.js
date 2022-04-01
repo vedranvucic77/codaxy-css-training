@@ -1,5 +1,5 @@
 import { KeySelection } from "cx/ui";
-import { Button, Checkbox, Grid } from "cx/widgets";
+import { Button, Grid } from "cx/widgets";
 
 export const Overview = () => (
     <cx>
@@ -11,31 +11,8 @@ export const Overview = () => (
 
             <Grid
                 records-bind="$page.customers"
-                style={{ width: "100%", padding: "10px 16px 16px 16px" }}
+                class="overview_grid"
                 columns={[
-                    {
-                        header: {
-                            items: (
-                                <cx>
-                                    <Checkbox
-                                        value-bind="$page.selectAll"
-                                        indeterminate
-                                        unfocusable
-                                    />
-                                </cx>
-                            ),
-                        },
-                        field: "selected",
-                        style: "width: 1px",
-                        items: (
-                            <cx>
-                                <Checkbox
-                                    value-bind="$record.selected"
-                                    unfocusable
-                                />
-                            </cx>
-                        ),
-                    },
                     {
                         header: "NAME",
                         field: "name",
@@ -62,7 +39,6 @@ export const Overview = () => (
                     },
                 ]}
                 selection={{ type: KeySelection, bind: "$page.selection" }}
-                sorters-bind="$page.sorters"
             />
         </div>
     </cx>

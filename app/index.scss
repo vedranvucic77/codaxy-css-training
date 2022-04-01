@@ -30,6 +30,7 @@ $primary-color: #397289;
 
 // sizing
 $main-unit-size: 8px;
+$small-device: 830px;
 
 @import "~cx/src/variables";
 
@@ -65,6 +66,7 @@ $cx-button-mods: cx-deep-map-merge(
         ),
         standard: (
             default: (
+                background: #fff,
                 color: $primary-color,
                 font-weight: 400,
                 padding-top: 8px,
@@ -73,6 +75,15 @@ $cx-button-mods: cx-deep-map-merge(
                 border-radius: 5px,
                 border-color: $primary-color,
             ),
+        ),
+    )
+);
+
+$cx-element-style-map: cx-deep-map-merge(
+    $cx-element-style-map,
+    (
+        html: (
+            background-color: #fff,
         ),
     )
 );
