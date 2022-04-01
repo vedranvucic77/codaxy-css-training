@@ -88,8 +88,8 @@ export default (
                         <h4>Color Scheme</h4>
                     </div>
 
-                    <div class="sidebar_themecontrol">
-                        <div class="sidebar_theme active">
+                    <div class="sidebar_themecontrol active">
+                        <div class="sidebar_theme">
                             <img
                                 src="../../assets/img/sun.png"
                                 class="active"
