@@ -1,0 +1,36 @@
+.sidebar {
+    &.sidebar_inactive {
+        .sidebar_item {
+            padding: $main-unit-size / 2;
+            margin-bottom: 20px;
+            a {
+                display: none;
+            }
+        }
+    }
+    .sidebar_item {
+        display: flex;
+        padding: 2 * $main-unit-size $main-unit-size 2 * $main-unit-size 2 * $main-unit-size;
+        margin-right: 3 * $main-unit-size;
+        align-items: center;
+        
+        &.active {
+            background: $background-primary;
+            border-radius: $main-unit-size;
+            
+            a {
+                color: #fff;
+            }
+        }
+
+        img {
+            margin-right: $main-unit-size;
+        }
+
+        a {
+            color: $text-gray;
+            font-weight: $font-bold;
+            text-decoration: none;
+        }
+    }
+}

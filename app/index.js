@@ -1,6 +1,6 @@
-import {Store} from "cx/data";
-import {Url, History, Widget, startHotAppLoop} from "cx/ui";
-import {Timing, Debug} from "cx/util";
+import { Store } from "cx/data";
+import { Url, History, Widget, startHotAppLoop } from "cx/ui";
+import { Timing, Debug } from "cx/util";
 
 //css
 import "./index.scss";
