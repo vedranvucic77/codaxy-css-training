@@ -3,13 +3,13 @@ import { Button } from "cx/widgets";
 export const Main = () => (
     <cx>
         <div class="main">
-            <div class="photo"></div>
-            <div class="about">
-                <p class="author">Author Name</p>
-                <h2 class="title">
+            <div class="main_photo"></div>
+            <div class="main_about">
+                <p class="main_author">Author Name</p>
+                <h2 class="main_title">
                     The best way to learn CSS is by building something
                 </h2>
-                <h4 class="description">
+                <h4 class="main_description">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Aliquam consectetur venenatis blandit. Praesent vehicula,
                     libero non pretium vulputate, lacus arcu facilisis lectus,
