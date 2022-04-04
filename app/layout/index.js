@@ -102,6 +102,13 @@ export default (
                         </div>
                     </div>
                 </div>
+
+                <i
+                    class={{
+                        hamburger: true,
+                        open: { bind: "page.sidebar" },
+                    }}
+                />
             </nav>
             <ContentPlaceholder class="test" />
         </div>
