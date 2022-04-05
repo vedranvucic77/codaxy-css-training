@@ -17,6 +17,9 @@ $cx-default-font-family: "Roboto", sans-serif;
 $main-unit-size: 8px;
 $small-device: 830px;
 
+// other
+$shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+
 @import "~cx/src/variables";
 
 $cx-button-mods: cx-deep-map-merge(

@@ -2,7 +2,7 @@
     &.sidebar_inactive {
         .sidebar_item {
             padding: $main-unit-size / 2;
-            margin-bottom: 20px;
+            margin-bottom: 3 * $main-unit-size;
             a {
                 display: none;
             }

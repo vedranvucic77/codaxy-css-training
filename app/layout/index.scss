@@ -37,7 +37,7 @@ $sidebar-width: 280px;
 
     &.sidebar_inactive {
         transition: 0.2s;
-        width: 80px;
+        width: 10 * $main-unit-size;
         .sidebar_companylogo {
             flex-direction: column;
 
@@ -65,7 +65,7 @@ $sidebar-width: 280px;
 
         .sidebar_footer {
             .line {
-                width: 60px;
+                width: 8 * $main-unit-size;
             }
 
             .sidebar_colorsheme {
@@ -103,7 +103,7 @@ $sidebar-width: 280px;
         align-content: center;
 
         .logo {
-            margin-top: -20px;
+            margin-top: -3 * $main-unit-size;
             margin-right: $main-unit-size;
         }
 
@@ -117,7 +117,7 @@ $sidebar-width: 280px;
             height: 3 * $main-unit-size;
             width: 0px;
             border: 1px solid $background-gray;
-            border-radius: 5px;
+            border-radius: $main-unit-size / 2;
         }
     }
 
@@ -155,9 +155,9 @@ $sidebar-width: 280px;
         align-items: center;
 
         .line {
-            width: 231px;
-            height: 2px;
-            border-radius: 2px;
+            width: 29 * $main-unit-size;
+            height: $main-unit-size / 4;
+            border-radius: $main-unit-size / 4;
             background: $background-gray;
             margin-bottom: $main-unit-size;
         }
@@ -211,7 +211,7 @@ $sidebar-width: 280px;
         justify-content: space-between;
         flex-direction: row;
         width: 100% !important;
-        height: 70px;
+        height: 9 * $main-unit-size;
 
         .sidebar_companylogo {
             flex-direction: row !important;
