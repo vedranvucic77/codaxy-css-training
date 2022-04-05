@@ -121,7 +121,7 @@ export default (
 
             <div class="chart box_chart">
                 <div class="chart_post">
-                    <h2 class="chart_title">Line Chart</h2>
+                    <h2 class="chart_title">Box Chart</h2>
                     <p class="chart_description">
                         Lorem ipsum dolor sitLorem ipsum dolor sit amet,
                         consectetur adipiscing elit...Lorem ipsum dolor sit
