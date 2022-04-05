@@ -3,13 +3,13 @@ import { Button } from "cx/widgets";
 export const Main = () => (
     <cx>
         <div class="main">
-            <div class="photo"></div>
-            <div class="about">
-                <p class="author">Author Name</p>
-                <h2 class="title">
+            <div class="main_photo"></div>
+            <div class="main_content post">
+                <p class="post_author">Author Name</p>
+                <h2 class="post_title">
                     The best way to learn CSS is by building something
                 </h2>
-                <h4 class="description">
+                <h4 class="post_description">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Aliquam consectetur venenatis blandit. Praesent vehicula,
                     libero non pretium vulputate, lacus arcu facilisis lectus,
@@ -19,7 +19,7 @@ export const Main = () => (
                     dolor. Fusce scelerisque eleifend lectus in bibendum.
                     Suspendisse lacinia egestas felis a volutpat.
                 </h4>
-                <Button style="margin-top: 24px;" mod="primary">
+                <Button class="post_button" mod="primary">
                     Build Something
                 </Button>
             </div>

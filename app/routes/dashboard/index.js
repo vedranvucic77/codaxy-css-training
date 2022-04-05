@@ -28,15 +28,15 @@ export default (
             <Main />
 
             <div class="chart">
-                <div class="about">
-                    <h2 class="title">Line Chart</h2>
-                    <p class="description">
+                <div class="chart_post">
+                    <h2 class="chart_title">Line Chart</h2>
+                    <p class="chart_description">
                         Lorem ipsum dolor sitLorem ipsum dolor sit amet,
                         consectetur adipiscing elit...Lorem ipsum dolor sit
                         amet, consectetur adipiscing elit amet, consectetur
                         adipiscing elitrarararara
                     </p>
-                    <Button style="margin-top: 24px;" mod="standard">
+                    <Button class="chart_button" mod="standard">
                         See Analysis
                     </Button>
                 </div>
@@ -120,15 +120,15 @@ export default (
             </div>
 
             <div class="chart box_chart">
-                <div class="about">
-                    <h2 class="title">Line Chart</h2>
-                    <p class="description">
+                <div class="chart_post">
+                    <h2 class="chart_title">Line Chart</h2>
+                    <p class="chart_description">
                         Lorem ipsum dolor sitLorem ipsum dolor sit amet,
                         consectetur adipiscing elit...Lorem ipsum dolor sit
                         amet, consectetur adipiscing elit amet, consectetur
                         adipiscing elitrarararara
                     </p>
-                    <Button style="margin-top: 24px;" mod="standard">
+                    <Button class="chart_button" mod="standard">
                         See Analysis
                     </Button>
                 </div>

@@ -5,24 +5,24 @@
     grid-column-end: 4;
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
 
-    .photo {
+    &_photo {
         width: 297px;
         height: 240px;
         flex: none;
         background: url("../assets/img/bg.png");
     }
 
-    .about {
+    .post {
         margin-left: 4 * $main-unit-size;
         margin-top: 3 * $main-unit-size;
         max-width: 500px;
 
-        .title {
+        &_title {
             font-family: "Roboto", sans-serif;
             font-weight: $font-bold;
         }
 
-        .description {
+        &_description {
             max-width: 400px;
             overflow: hidden;
             text-overflow: ellipsis;
@@ -32,8 +32,13 @@
             -webkit-box-orient: vertical;
             font-weight: 400;
         }
+
+        &_button {
+            margin-top: $main-unit-size * 3;
+        }
     }
 }
+
 @media screen and(max-width: $small-device) {
     .main {
         width: 80% !important;
@@ -41,25 +46,25 @@
         grid-column-end: 3;
         position: relative;
 
-        .photo {
+        &_photo {
             display: none;
         }
 
-        .about {
-            .description {
-                margin-bottom: 20px;
+        .post {
+            &_description {
+                margin-bottom: 3 * $main-unit-size;
             }
-        }
 
-        button {
-            position: absolute;
-            right: 20px;
-            bottom: 10px;
+            &_button {
+                position: absolute;
+                right: 20px;
+                bottom: 10px;
+            }
         }
     }
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1380px) {
     .main {
         width: 100%;
     }

@@ -2,7 +2,7 @@ $sidebar-width: 280px;
 
 .full_margin {
     margin-left: $sidebar-width + 70px !important;
-    margin-right: $sidebar-width - 200px !important;
+    margin-right: $sidebar-width - 25 * $main-unit-size !important;
     transition: 1s;
     @media screen and (max-width: $small-device) {
         margin-left: 0 !important;
@@ -12,7 +12,7 @@ $sidebar-width: 280px;
 
 .min_margin {
     margin-left: $sidebar-width - 120px;
-    margin-right: $sidebar-width - 200px;
+    margin-right: $sidebar-width - 25 * $main-unit-size;
     transition: 1s;
 
     @media screen and (max-width: $small-device) {
@@ -108,7 +108,7 @@ $sidebar-width: 280px;
         }
 
         .company_name {
-            color: $text-red;
+            color: $primary-100;
         }
 
         .line {

@@ -1,3 +1,5 @@
+@import "./colors.scss";
+
 $cx-include-global-rules: true;
 
 // grid
@@ -6,27 +8,10 @@ $cx-default-grid-header-padding: 12px 0 8px 10px;
 $cx-default-grid-data-padding: 12px;
 $cx-default-grid-data-alternate-background-color: rgba(134, 134, 134, 0.05);
 
-// colors
-$cx-default-palette-colors: rgba(57, 114, 137, 1) rgba(136, 170, 184, 1)
-    rgba(225, 123, 137, 1) rgba(237, 176, 184, 1) rgba(63, 81, 181, 1)
-    rgba(33, 150, 243, 1) rgba(3, 169, 244, 1) rgba(0, 188, 212, 1)
-    rgba(0, 150, 136, 1) rgba(76, 175, 80, 1) rgba(139, 195, 74, 1)
-    rgba(205, 220, 57, 1) rgba(255, 235, 59, 1) rgba(255, 193, 7, 1)
-    rgba(255, 152, 0, 1) rgba(255, 87, 34, 1);
-$cx-default-palette-fill-whiten: 10%;
-
 // font
 $font-bold: 600;
 $font-size: 16px;
 $cx-default-font-family: "Roboto", sans-serif;
-
-// colors
-$text-red: #e73959;
-$text-gray: #535763;
-$text-black: #1a1b2d;
-$background-primary: #397289cc;
-$background-gray: #d1d3d4;
-$primary-color: #397289;
 
 // sizing
 $main-unit-size: 8px;
@@ -39,8 +24,8 @@ $cx-button-mods: cx-deep-map-merge(
     (
         primary: (
             default: (
-                background-color: $primary-color,
-                border-color: $primary-color,
+                background-color: $secondary-100,
+                border-color: $secondary-100,
                 color: #fff,
                 border-radius: 5px,
                 padding-top: 8px,
@@ -51,29 +36,29 @@ $cx-button-mods: cx-deep-map-merge(
                 box-shadow: none,
             ),
             hover: (
-                background-color: $primary-color,
-                border-color: $primary-color,
+                background-color: $secondary-100,
+                border-color: $secondary-100,
             ),
             active: (
-                background-color: $primary-color,
-                border-color: $primary-color,
+                background-color: $secondary-100,
+                border-color: $secondary-100,
             ),
         ),
         hollow: (
             default: (
-                color: $primary-color,
+                color: $secondary-100,
             ),
         ),
         standard: (
             default: (
                 background: #fff,
-                color: $primary-color,
+                color: $secondary-100,
                 font-weight: 400,
                 padding-top: 8px,
                 padding-bottom: 24px,
                 width: 132px,
                 border-radius: 5px,
-                border-color: $primary-color,
+                border-color: $secondary-100,
             ),
         ),
     )
