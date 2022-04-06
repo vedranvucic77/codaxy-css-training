@@ -1,5 +1,5 @@
 import { ContentPlaceholder } from "cx/widgets";
-import { NavItem } from "../components/Navitem";
+import { NavItem } from "../components/nav-item";
 import Controller from "./Controller";
 
 export default (

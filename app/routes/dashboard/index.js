@@ -11,7 +11,7 @@ import { Svg } from "cx/svg";
 import { Button, Repeater } from "cx/widgets";
 
 import { RandomTextCard } from "../../components/random-text-card";
-import { Overview } from "../../components/Overview";
+import { Overview } from "../../components/overview";
 import { columnSelection } from "./Controller";
 import Controller from "./Controller";
 import { MainDashboardPost } from "../../components/main-dashboard-card";
