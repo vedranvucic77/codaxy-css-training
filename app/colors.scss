@@ -9,9 +9,12 @@ $cx-default-palette-colors: rgba(57, 114, 137, 1) rgba(136, 170, 184, 1)
 $cx-default-palette-fill-whiten: 10%;
 
 // colors
-$primary-100: hsl(349, 78%, 56%);
+$secondary-100: hsl(349, 78%, 56%);
 $text-gray: hsl(225, 9%, 36%);
 $text-black: hsl(237, 27%, 14%);
 $background-gray: hsl(200, 3%, 83%);
-$secondary-100: hsl(197, 41%, 38%);
-$secondary-80: hsla(197, 41%, 38%, 0.8);
+$primary-40: hsl(197, 43%, 44%);
+$primary-60: hsl(197, 41%, 38%);
+$primary-80: hsl(197, 35%, 32%);
+$primary-100: hsl(197, 32%, 28%);
+$gray-color-100: hsl(225, 30%, 90%);

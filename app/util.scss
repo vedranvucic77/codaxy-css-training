@@ -1,0 +1,68 @@
+$sides: top right bottom left;
+$directions: row column;
+$main-layout-size-unit: 2px;
+
+// margin and padding
+@for $i from 2 through 10 {
+    @each $side in $sides {
+        .margin-#{$side}-#{$i} {
+            margin-#{$side}: $i * $main-layout-size-unit !important;
+        }
+
+        .padding-#{$side}-#{$i} {
+            padding-#{$side}: $i * $main-layout-size-unit !important;
+        }
+    }
+
+    .margin-#{$i}x {
+        margin: $i * $main-layout-size-unit !important;
+    }
+
+    .padding-#{$i}x {
+        padding: $i * $main-layout-size-unit !important;
+    }
+}
+
+.title {
+    font-family: "Roboto", sans-serif;
+    font-weight: $font-bold;
+    font-size: $font-size-large;
+}
+
+// line clamps 
+@for $i from 2 through 5 {
+    .line-clamp-#{$i} {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: $i;
+        line-clamp: $i;
+        -webkit-box-orient: vertical;
+    }
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+// grid
+
+@for $i from 1 through 100 {
+    @each $dir in $directions {
+        .grid-#{$dir}-start-#{$i} {
+            grid-#{$dir}-start: $i;
+        }
+
+        .grid-#{$dir}-end-#{$i} {
+            grid-#{$dir}-end: $i;
+        }
+    }
+}
+// grid-column-start: 4;
+// grid-column-end: 10;

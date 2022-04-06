@@ -1,12 +1,12 @@
 import { KeySelection } from "cx/ui";
 import { Button, Grid } from "cx/widgets";
 
-export const Overview = () => (
+export const Overview = ({ className }) => (
     <cx>
-        <div class="overview">
+        <div class="overview" className={className}>
             <div class="overview_header">
                 <h4 class="overview_title">Customer Overview</h4>
-                <Button mod="standard">Add Customer</Button>
+                <Button mod="secondary">Add Customer</Button>
             </div>
 
             <Grid

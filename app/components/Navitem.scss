@@ -18,7 +18,7 @@
         transition: 0.4s;
 
         &.active {
-            background: $secondary-80;
+            background: $primary-80;
             border-radius: $main-unit-size;
 
             .item_url {
@@ -39,7 +39,7 @@
         }
 
         &:hover {
-            background: $secondary-80;
+            background: $primary-80;
             border-radius: $main-unit-size;
             transition: 0.1s;
             cursor: pointer;

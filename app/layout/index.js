@@ -5,15 +5,16 @@ import Controller from "./Controller";
 export default (
     <cx>
         <div>
+            {/* here */}
             <nav
                 controller={Controller}
-                className="sidebar"
+                className="sidebar flex-col"
                 class={{
                     sidebar_inactive: { bind: "page.sidebar" },
                 }}
             >
                 <div class="sidebar_header">
-                    <div class="sidebar_companylogo">
+                    <div class="sidebar_companylogo flex-row">
                         <img
                             src="../../assets/img/logo.png"
                             alt="logo"
@@ -81,7 +82,7 @@ export default (
                     </div>
                 </div>
 
-                <div class="sidebar_footer">
+                <div class="sidebar_footer flex-col">
                     <div class="line"></div>
                     <div class="sidebar_colorsheme">
                         <img src="../../assets/img/question_mark.png" />

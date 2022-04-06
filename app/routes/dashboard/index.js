@@ -10,11 +10,12 @@ import {
 import { Svg } from "cx/svg";
 import { Button, Repeater } from "cx/widgets";
 
-import { Card } from "../../components/Card";
-import { Main } from "../../components/Main";
+import { RandomTextCard } from "../../components/random-text-card";
 import { Overview } from "../../components/Overview";
 import { columnSelection } from "./Controller";
 import Controller from "./Controller";
+import { MainDashboardPost } from "../../components/main-dashboard-card";
+import { ChartCard } from "../../components/chart-card";
 
 export default (
     <cx>
@@ -25,21 +26,13 @@ export default (
                 full_margin: { expr: "!{page.sidebar}" },
             }}
         >
-            <Main />
-
-            <div class="chart">
-                <div class="chart_post">
-                    <h2 class="chart_title">Line Chart</h2>
-                    <p class="chart_description">
-                        Lorem ipsum dolor sitLorem ipsum dolor sit amet,
-                        consectetur adipiscing elit...Lorem ipsum dolor sit
-                        amet, consectetur adipiscing elit amet, consectetur
-                        adipiscing elitrarararara
-                    </p>
-                    <Button class="chart_button" mod="standard">
-                        See Analysis
-                    </Button>
-                </div>
+            <MainDashboardPost className="grid-column-start-1 grid-column-end-2" />
+            <ChartCard
+                title="Line Chart"
+                description="Lorem ipsum dolor sitLorem ipsum dolor sit amet,consectetur adipiscing elit...Lorem ipsum dolor sitamet, consectetur adipiscing elit amet, consectetur"
+                buttonText="See Analysis"
+                className="grid-column-start-2 grid-column-end-3"
+            >
                 <Svg class="svgchart">
                     <Chart
                         offset="20 -10 -40 40"
@@ -104,35 +97,28 @@ export default (
                         </Repeater>
                     </Chart>
                 </Svg>
-            </div>
+            </ChartCard>
 
-            <div class="card_carrier">
-                <Card
+            <div class="card_carrier grid-column-start-1 grid-column-end-2">
+                <RandomTextCard
                     title="Some random text instead of a really long title"
                     desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et doloredoloredoloredoloredoloredolore"
                     btn="Read More"
                 />
-                <Card
+                <RandomTextCard
                     title="Some random text instead of a really long title"
                     desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et doloredoloredoloredoloredoloredolore"
                     btn="Read More"
                 />
             </div>
 
-            <div class="chart box_chart">
-                <div class="chart_post">
-                    <h2 class="chart_title">Box Chart</h2>
-                    <p class="chart_description">
-                        Lorem ipsum dolor sitLorem ipsum dolor sit amet,
-                        consectetur adipiscing elit...Lorem ipsum dolor sit
-                        amet, consectetur adipiscing elit amet, consectetur
-                        adipiscing elitrarararara
-                    </p>
-                    <Button class="chart_button" mod="standard">
-                        See Analysis
-                    </Button>
-                </div>
-                <Svg class="svgchart">
+            <ChartCard
+                title="Box Chart"
+                description="Lorem ipsum dolor sitLorem ipsum dolor sit amet,consectetur adipiscing elit...Lorem ipsum dolor sitamet, consectetur adipiscing elit amet, consectetur"
+                buttonText="See Analysis"
+                className="grid-column-start-2 grid-column-end-3"
+            >
+                <Svg>
                     <Chart
                         offset="20 -20 -30 40"
                         axes={{
@@ -190,9 +176,9 @@ export default (
                         </Repeater>
                     </Chart>
                 </Svg>
-            </div>
+            </ChartCard>
 
-            <Overview />
+            <Overview className="grid-column-start-1 grid-column-end-3" />
         </div>
     </cx>
 );

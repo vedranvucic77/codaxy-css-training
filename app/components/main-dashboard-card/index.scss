@@ -1,0 +1,53 @@
+.maindashboardcard {
+    display: flex;
+    box-shadow: $shadow;
+
+    &_photo {
+        flex: none;
+        width: 300px;
+        background: url("../assets/img/bg.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+
+.post {
+    margin-left: 4 * $main-unit-size;
+    margin-top: 3 * $main-unit-size;
+    max-width: 60 * $main-unit-size;
+
+    &_author {
+        margin-top: $main-unit-size;
+        margin-bottom: 2 * $main-unit-size;
+        font-size: $font-size-small;
+    }
+
+    &_button {
+        margin-top: auto;
+    }
+}
+
+@media screen and(max-width: $small-device) {
+    .maindashboardcard {
+        padding-bottom: 5 * $main-unit-size;
+        padding-right: 2 * $main-unit-size;
+        position: relative;
+
+        &_photo {
+            display: none;
+        }
+    }
+
+    .post {
+        &_description {
+            margin-bottom: 3 * $main-unit-size;
+        }
+
+        &_button {
+            position: absolute;
+            right: 3 * $main-unit-size;
+            bottom: $main-unit-size;
+        }
+    }
+}
+

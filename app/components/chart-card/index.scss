@@ -1,0 +1,28 @@
+
+.chartcard {
+    display: grid;
+    grid-template-columns: minmax(280px, 350px) 1fr;
+    box-shadow: $shadow;
+
+    &_post {
+        padding-top: 2 * $main-unit-size;
+        padding-left: 5 * $main-unit-size;
+    }
+
+
+    &_button {
+        margin-top: 3 * $main-unit-size;
+    }
+
+    @media screen and (max-width: 1280px) {
+        grid-template-columns: minmax(250px, 800px) !important;
+
+        &_post {
+            grid-row-start: 2;
+        }
+
+        svg {
+            grid-row-start: 1;
+        }
+    }
+}

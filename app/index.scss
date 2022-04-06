@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Roboto:wght@400;700&display=swap");
 @import "./colors.scss";
 
+$border-radius: 4px;
+
 $cx-include-global-rules: true;
 
 // grid
@@ -9,9 +11,23 @@ $cx-default-grid-header-padding: 12px 0 8px 10px;
 $cx-default-grid-data-padding: 12px;
 $cx-default-grid-data-alternate-background-color: rgba(134, 134, 134, 0.05);
 
+// button
+$cx-default-button-border-radius: $border-radius;
+$cx-default-button-background-color: $gray-color-100;
+$cx-default-button-border-color: $gray-color-100;
+$cx-default-button-box-shadow: none;
+
+$disabled-button-background-color: lighten($cx-default-button-background-color, 5);
+$disabled-button-color: lighten($text-gray, 35);
+
+$cx-default-box-line-height: 1.5;
+
 // font
 $font-bold: 600;
-$font-size: 16px;
+$font-size-small: 12px;
+$font-size-medium: 14px;
+$cx-default-font-size: 16px;
+$font-size-large: 20px;
 $cx-default-font-family: "Roboto", sans-serif;
 
 // sizing
@@ -23,46 +39,75 @@ $shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
 
 @import "~cx/src/variables";
 
+$cx-button-state-style-map: cx-deep-map-merge(
+    $cx-button-state-style-map,
+    (
+        default: (
+            transition: all 0.2s ease-in,
+        ),
+        hover: (
+            background-color: darken($cx-default-button-background-color, 4),
+            border-color: darken($cx-default-button-background-color, 4),
+            box-shadow: none,
+            transition: all 0.2s ease-in,
+        ),
+        active: (
+            top: 0,
+            background-color: darken($cx-default-button-background-color, 10),
+            border-color: darken($cx-default-button-background-color, 10),
+            box-shadow: none,
+        ),
+        focus: (
+            top: 0,
+            background-color: darken($cx-default-button-background-color, 8),
+            border-color: darken($cx-default-button-background-color, 8),
+            box-shadow: none,
+        ),
+        disabled: (
+            background-color: $disabled-button-background-color,
+            border-color: $disabled-button-background-color,
+            color: $disabled-button-color,
+        ),
+    )
+);
+
 $cx-button-mods: cx-deep-map-merge(
     $cx-button-mods,
     (
         primary: (
             default: (
-                background-color: $secondary-100,
-                border-color: $secondary-100,
+                background-color: $primary-60,
+                border-color: $primary-60,
                 color: #fff,
-                border-radius: 5px,
-                padding-top: 8px,
-                padding-bottom: 24px,
-                width: 132px,
             ),
             focus: (
+                background-color: $primary-80,
                 box-shadow: none,
             ),
             hover: (
-                background-color: $secondary-100,
-                border-color: $secondary-100,
+                background-color: $primary-40,
+                border-color: $primary-40,
             ),
             active: (
-                background-color: $secondary-100,
-                border-color: $secondary-100,
+                background-color: $primary-100,
+                border-color: $primary-100,
             ),
         ),
         hollow: (
             default: (
-                color: $secondary-100,
+                color: $primary-60,
             ),
         ),
         standard: (
             default: (
                 background: #fff,
-                color: $secondary-100,
+                color: $primary-100,
                 font-weight: 400,
                 padding-top: 8px,
                 padding-bottom: 24px,
                 width: 132px,
                 border-radius: 5px,
-                border-color: $secondary-100,
+                border-color: $primary-100,
             ),
         ),
     )
@@ -79,6 +124,11 @@ $cx-element-style-map: cx-deep-map-merge(
 
 @import "~cx/src/index";
 
+p {
+    line-height: $cx-default-box-line-height;
+}
+
 @import "components/index";
 @import "layout/index";
 @import "routes/index";
+@import "./util.scss";

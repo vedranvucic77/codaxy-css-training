@@ -1,9 +1,6 @@
 .overview {
-    width: 100%;
     grid-row-start: 3;
-    grid-column-start: 1;
-    grid-column-end: 10;
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+    box-shadow: $shadow;
 
     &_header {
         display: flex;
@@ -19,20 +16,12 @@
     }
 
     &_grid {
-        width: 100%;
         padding: 2 * $main-unit-size;
     }
 }
 
 @media screen and (max-width: $small-device) {
     .overview {
-        width: 84%;
-        grid-column-start: 1;
-        grid-column-end: 10;
-        grid-row-start: 5;
-
-        .overview_grid {
-            padding: 0 !important;
-        }
+        grid-row-start: 3;
     }
 }
