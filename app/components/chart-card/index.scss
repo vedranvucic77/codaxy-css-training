@@ -18,7 +18,13 @@
         grid-template-columns: minmax(250px, 800px) !important;
 
         &_post {
+            display: flex;
+            flex-direction: column;
             grid-row-start: 2;
+        }
+
+        &_button {
+            align-self: flex-end;
         }
 
         svg {

@@ -14,7 +14,6 @@
 .post {
     margin-left: 4 * $main-unit-size;
     margin-top: 3 * $main-unit-size;
-    max-width: 60 * $main-unit-size;
 
     &_author {
         margin-top: $main-unit-size;
@@ -39,14 +38,14 @@
     }
 
     .post {
+        display: flex;
+        flex-direction: column;
         &_description {
             margin-bottom: 3 * $main-unit-size;
         }
 
         &_button {
-            position: absolute;
-            right: 3 * $main-unit-size;
-            bottom: $main-unit-size;
+            align-self: flex-end;
         }
     }
 }

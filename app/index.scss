@@ -98,18 +98,6 @@ $cx-button-mods: cx-deep-map-merge(
                 color: $primary-60,
             ),
         ),
-        standard: (
-            default: (
-                background: #fff,
-                color: $primary-100,
-                font-weight: 400,
-                padding-top: 8px,
-                padding-bottom: 24px,
-                width: 132px,
-                border-radius: 5px,
-                border-color: $primary-100,
-            ),
-        ),
     )
 );
 
