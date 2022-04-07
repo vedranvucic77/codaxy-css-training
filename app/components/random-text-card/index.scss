@@ -1,6 +1,8 @@
 .randomtextcard {
     box-shadow: $shadow;
     padding: 32px;
+    width: 320px;
+
     &_title {
         margin-left: 2 * $main-unit-size;
         margin-right: 2 * $main-unit-size;
@@ -17,14 +19,15 @@
         background-color: #e795a1;
     }
 
-    &_desciption {
-        max-width: 37 * $main-unit-size;
-        margin-top: 2 * $main-unit-size;
-        margin-left: 7 * $main-unit-size;
-    }
 
     &_readmore {
+        margin-top: auto;
         align-self: flex-end;
     }
 }
 
+@media screen and (max-width: $small-device) {
+    .randomtextcard {
+        width: auto;
+    }
+}

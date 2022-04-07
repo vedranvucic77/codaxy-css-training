@@ -1,25 +1,24 @@
 $sides: top right bottom left;
 $directions: row column;
-$main-layout-size-unit: 2px;
 
 // margin and padding
 @for $i from 2 through 10 {
     @each $side in $sides {
         .margin-#{$side}-#{$i} {
-            margin-#{$side}: $i * $main-layout-size-unit !important;
+            margin-#{$side}: $i * $main-unit-size !important;
         }
 
         .padding-#{$side}-#{$i} {
-            padding-#{$side}: $i * $main-layout-size-unit !important;
+            padding-#{$side}: $i * $main-unit-size !important;
         }
     }
 
     .margin-#{$i}x {
-        margin: $i * $main-layout-size-unit !important;
+        margin: $i * $main-unit-size !important;
     }
 
     .padding-#{$i}x {
-        padding: $i * $main-layout-size-unit !important;
+        padding: $i * $main-unit-size !important;
     }
 }
 
@@ -27,6 +26,7 @@ $main-layout-size-unit: 2px;
     font-family: "Roboto", sans-serif;
     font-weight: $font-bold;
     font-size: $font-size-large;
+    margin: 0 0 2 * $main-unit-size;
 }
 
 // line clamps 
@@ -43,7 +43,6 @@ $main-layout-size-unit: 2px;
 
 .flex-row {
     display: flex;
-    flex-direction: row;
 }
 
 .flex-col {

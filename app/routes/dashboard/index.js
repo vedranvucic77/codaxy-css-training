@@ -29,11 +29,11 @@ export default (
             <MainDashboardPost className="grid-column-start-1 grid-column-end-2" />
             <ChartCard
                 title="Line Chart"
-                description="Lorem ipsum dolor sitLorem ipsum dolor sit amet,consectetur adipiscing elit...Lorem ipsum dolor sitamet, consectetur adipiscing elit amet, consectetur"
+                description="Lorem ipsum dolor sitLorem ipsumorem ipsum dolor sitLorem ipsum dolor sit amet,consectetur adipiscing elitorem ipsum dolor sitLorem ipsum dolor sit amet,consectetur adipiscing elit dolor sit amet,consectetur adipiscing elit...Lorem ipsum dolor sitamet, consectetur adipiscing elit amet, consectetur"
                 buttonText="See Analysis"
                 className="grid-column-start-2 grid-column-end-3"
             >
-                <Svg class="svgchart">
+                <Svg>
                     <Chart
                         offset="20 -10 -40 40"
                         axes={{
@@ -102,19 +102,19 @@ export default (
             <div class="card_carrier grid-column-start-1 grid-column-end-2">
                 <RandomTextCard
                     title="Some random text instead of a really long title"
-                    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et doloredoloredoloredoloredoloredolore"
+                    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et doorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dot ut labore et doloredoloredoLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et doorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dot ut labore et doloredoloredoloredoloredoloredolLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et doorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dot ut labore et doloredoloredoloredoloredoloredolloredoloredoloredolore"
                     btn="Read More"
                 />
                 <RandomTextCard
                     title="Some random text instead of a really long title"
-                    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et doloredoloredoloredoloredoloredolore"
+                    desc="Lorem ipsum doloLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et doorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dot ut labore et doloredoloredoloredoloredoloredolLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et doorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dot ut labore et doloredoloredoloredoloredoloredolr sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et doloredoloredoloredoloredoloredorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et doorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et doolore"
                     btn="Read More"
                 />
             </div>
 
             <ChartCard
                 title="Box Chart"
-                description="Lorem ipsum dolor sitLorem ipsum dolor sit amet,consectetur adipiscing elit...Lorem ipsum dolor sitamet, consectetur adipiscing elit amet, consectetur"
+                description="Lorem ipsum dorem ipsum dolor sitLorem ipsum dolor sit amet,consectetur adipiscing elitorem ipsum dolor sitLorem ipsum dolor sit amet,consectetur adipiscing elitolor sitLorem ipsum dolor sit amet,consectetur adipiscing elit...Lorem ipsum dolor sitamet, consectetur adipiscing elit amet, consectetur"
                 buttonText="See Analysis"
                 className="grid-column-start-2 grid-column-end-3"
             >

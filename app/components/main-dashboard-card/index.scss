@@ -12,11 +12,9 @@
 }
 
 .post {
-    margin-left: 4 * $main-unit-size;
-    margin-top: 3 * $main-unit-size;
+    padding: 3 * $main-unit-size 4 * $main-unit-size;
 
     &_author {
-        margin-top: $main-unit-size;
         margin-bottom: 2 * $main-unit-size;
         font-size: $font-size-small;
     }

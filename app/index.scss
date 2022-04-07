@@ -5,6 +5,15 @@ $border-radius: 4px;
 
 $cx-include-global-rules: true;
 
+// palette
+$cx-default-palette-colors: rgba(57, 114, 137, 1) rgba(136, 170, 184, 1)
+    rgba(225, 123, 137, 1) rgba(237, 176, 184, 1) rgba(63, 81, 181, 1)
+    rgba(33, 150, 243, 1) rgba(3, 169, 244, 1) rgba(0, 188, 212, 1)
+    rgba(0, 150, 136, 1) rgba(76, 175, 80, 1) rgba(139, 195, 74, 1)
+    rgba(205, 220, 57, 1) rgba(255, 235, 59, 1) rgba(255, 193, 7, 1)
+    rgba(255, 152, 0, 1) rgba(255, 87, 34, 1);
+$cx-default-palette-fill-whiten: 10%;
+
 // grid
 $cx-default-grid-header-font-size: 11px;
 $cx-default-grid-header-padding: 12px 0 8px 10px;
@@ -44,6 +53,7 @@ $cx-button-state-style-map: cx-deep-map-merge(
     (
         default: (
             transition: all 0.2s ease-in,
+            width: fit-content,
         ),
         hover: (
             background-color: darken($cx-default-button-background-color, 4),
@@ -96,6 +106,23 @@ $cx-button-mods: cx-deep-map-merge(
         hollow: (
             default: (
                 color: $primary-60,
+            ),
+        ),
+        secondary: (
+            default: (
+                background-color: transparent,
+                border-color: $primary-60,
+                color: $primary-80,
+            ),
+            focus: (
+                box-shadow: none,
+                border-color: $primary-80,
+            ),
+            hover: (
+                border-color: $primary-40,
+            ),
+            active: (
+                border-color: $primary-100,
             ),
         ),
     )

@@ -3,7 +3,7 @@
     display: grid;
     gap: 4 * $main-unit-size 12 * $main-unit-size;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, -1) auto;
+    grid-template-rows: repeat(2, 280px) auto;
     z-index: 1;
 }
 

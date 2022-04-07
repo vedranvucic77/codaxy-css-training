@@ -1,22 +1,31 @@
 
 .chartcard {
-    display: grid;
-    grid-template-columns: minmax(280px, 350px) 1fr;
     box-shadow: $shadow;
+    display: flex;
+    gap: 4 * $main-unit-size;
+    padding: 3 * $main-unit-size 4 * $main-unit-size;
 
     &_post {
-        padding-top: 2 * $main-unit-size;
-        padding-left: 5 * $main-unit-size;
+        flex: none;
+        display: flex;
+        flex-direction: column;
+        width: 250px;
     }
 
 
     &_button {
-        margin-top: 3 * $main-unit-size;
+        margin-top: auto;
+    }
+
+    &_chart {
+        flex: 1;
+
+        .cxb-svg {
+            height: 100%;
+        }
     }
 
     @media screen and (max-width: 1280px) {
-        grid-template-columns: minmax(250px, 800px) !important;
-
         &_post {
             display: flex;
             flex-direction: column;

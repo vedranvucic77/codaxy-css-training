@@ -1,11 +1,10 @@
-import { ContentPlaceholder } from "cx/widgets";
+import { ContentPlaceholder, PureContainer } from "cx/widgets";
 import { NavItem } from "../components/nav-item";
 import Controller from "./Controller";
 
 export default (
     <cx>
-        <div>
-            {/* here */}
+        <PureContainer>
             <nav
                 controller={Controller}
                 className="sidebar flex-col"
@@ -112,6 +111,6 @@ export default (
                 />
             </nav>
             <ContentPlaceholder class="test" />
-        </div>
+        </PureContainer>
     </cx>
 );

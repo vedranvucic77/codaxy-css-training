@@ -8,17 +8,17 @@ export const ChartCard = ({
     className,
 }) => (
     <cx>
-        <div class="chartcard padding-10x" className={className}>
+        <div class="chartcard" className={className}>
             <div class="chartcard_post">
                 <h2 class="chartcard_title title" text={title} />
-                <p class="line-clamp-3" text={description} />
+                <p class="line-clamp-5" text={description} />
                 <Button
                     class="chartcard_button"
                     mod="secondary"
                     text={buttonText}
                 />
             </div>
-            {children}
+            <div class="chartcard_chart">{children}</div>
         </div>
     </cx>
 );
